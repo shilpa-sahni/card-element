@@ -17,8 +17,9 @@ import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
     }
     </style>
     <div>
-    <h3>[[heading]]</h3>
-    <p>[[text]]</p>
+      <h3><slot name="title"></slot></h3>
+      <p><slot name="content"></slot></p>
+      <div><slot name="action-buttons"></slot></div>
     </div>
     `;
   }
